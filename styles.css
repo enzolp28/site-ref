@@ -1,3 +1,6 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Cousine:ital,wght@0,400;0,700;1,400;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Shrikhand&display=swap');
+
 *,
 ::before,
 ::after {
@@ -8,7 +11,7 @@
 
 body {
     font-size: 15px;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: 'Cousine', Courier, monospace;
 }
 
 header {
@@ -105,13 +108,17 @@ main {
     margin-left: 90px;
 }
 
-.derniers-articles, .sneakers {
+.presentation-content h1 {
+    margin-bottom: 20px;
+}
+
+.derniers-articles, .sneakers, .magasins {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.derniers-articles h2, .sneakers h2 {
+.derniers-articles h2, .sneakers h2, .magasins h2 {
     padding: 20px;
     text-align: center;
     border: 1px solid;
@@ -147,25 +154,52 @@ main {
 
 .sneakers-container {
     display: flex;
-    justify-content: center;
-
-
-}
-.sneakers-last {
-    padding-right: 60px;
-    border-right: 1px solid;
+    justify-content: space-around;
+    width: 100%;
 }
 
-.sneakers-coming {
-    padding-left: 60px;
+.sneakers-last h3, .sneakers-coming h3 {
+    text-align: center;
+    margin-bottom: 90px;
+    font-weight: normal;
 }
 
 .sneakers-last_content img, .sneakers-coming_content img {
     width: 200px;
 }
 
-.sneakers-last_content {
+.sneakers-last_content, .sneakers-coming_content {
+    display: flex;
+    justify-content: space-around;
+    gap: 60px;
+    margin-bottom: 50px;
+}
+
+.sneakers-last_desc, .sneakers-coming_desc {
+    flex-direction: column;
+    align-items: flex-end;
+    display: flex;
+}
+
+.separation {
+    border-right: 1px solid #000; 
+}
+
+.sneakers-last_desc :last-child, .sneakers-coming_desc :last-child {
+    margin-top: 15px;
+}
+
+.magasins {
+    margin: 140px 0;
+}
+
+.magasins-gallery {
     display: flex;
     align-items: center;
     justify-content: space-around;
+    width: 100%;
+}
+
+.magasins-gallery a {
+    text-align: center;
 }
