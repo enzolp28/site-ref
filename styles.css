@@ -1,0 +1,171 @@
+*,
+::before,
+::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 15px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+header {
+    border-bottom: 1px solid black;
+}
+
+a {
+    text-decoration: none;
+    /* Enlève le soulignement */
+    color: inherit;
+    /* Utilise la couleur du texte parent */
+    background: none;
+    /* Enlève le fond */
+    border: none;
+    /* Enlève la bordure */
+    outline: none;
+    /* Enlève le contour */
+    font-weight: normal;
+    /* Remet le poids de la police à normal */
+}
+
+li {
+    list-style: none;
+}
+
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+
+}
+
+nav .navigation {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.navigation img {
+    width: 80px;
+}
+
+.navigation ul {
+    display: flex;
+    gap: 20px;
+
+}
+
+.btn-vinted {
+    margin-right: 95px;
+    background-color: #006971;
+    padding: 15px 50px;
+    border-radius: 10px;
+}
+
+.btn-vinted a {
+    color: #fff;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.navigation ul a:hover {
+    border-bottom: 1px solid;
+}
+
+/* MAIN */
+
+main {
+    margin: 0 70px;
+}
+
+.presentation-img img{
+    width: 430px;
+    height: 502px;
+    object-fit: scale-down;
+    margin-right: 40px;
+}
+
+.presentation {
+    margin:180px ;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.presentation-img {
+    border-right: 3px solid;
+}
+
+.presentation-content {
+    width: 100%;
+    margin-left: 90px;
+}
+
+.derniers-articles, .sneakers {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.derniers-articles h2, .sneakers h2 {
+    padding: 20px;
+    text-align: center;
+    border: 1px solid;
+    width: 60%;
+    margin-bottom: 100px;
+}
+
+.article-container {
+    display: flex;
+    align-items: center;
+    gap: 120px;
+    margin-bottom: 50px;
+}
+
+.article-img img {
+    width: 400px;
+}
+
+.article-content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.article-content h3 {
+    font-weight:lighter;
+}
+
+.sneakers {
+    margin-top: 100px;
+
+}
+
+.sneakers-container {
+    display: flex;
+    justify-content: center;
+
+
+}
+.sneakers-last {
+    padding-right: 60px;
+    border-right: 1px solid;
+}
+
+.sneakers-coming {
+    padding-left: 60px;
+}
+
+.sneakers-last_content img, .sneakers-coming_content img {
+    width: 200px;
+}
+
+.sneakers-last_content {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
