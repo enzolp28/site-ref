@@ -15,7 +15,7 @@ const displayLastArticles = async (articles) => {
     articles.forEach(article => {
         const {title, date, image, id} = article;
         const htmlArticle = `
-        <a href="article.html?id=${id}"> 
+        <a href="./article-derniere-sortie.html?id=${id}"> 
             <article class="sneakers-last_content">
                 <img src="${image}" alt="${title}" />
                 <div class="sneakers-last_desc">
@@ -55,7 +55,7 @@ const init = async () => {
     const articles = await getArticles();
     try{
         if(articles && articles.length > 0){
-            const lastThreeArticles = articles.slice(-3);
+            const lastThreeArticles = articles.slice(-3).reverse();
             displayLastArticles(lastThreeArticles);
             displayComingArticles(lastThreeArticles);
         }
