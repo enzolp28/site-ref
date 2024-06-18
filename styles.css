@@ -67,13 +67,11 @@ nav .navigation {
     background-color: #006971;
     padding: 15px 50px;
     border-radius: 10px;
-}
-
-.btn-vinted a {
     color: #fff;
     font-weight: bold;
     font-family: Arial, Helvetica, sans-serif;
 }
+
 
 .navigation ul a:hover {
     border-bottom: 1px solid;
